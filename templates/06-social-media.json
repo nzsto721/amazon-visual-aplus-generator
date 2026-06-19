@@ -1,0 +1,89 @@
+{
+  "id": "social-media",
+  "name": "Cross-border social media creatives",
+  "keywords": [
+    "social media",
+    "instagram",
+    "tiktok",
+    "tiktok shop",
+    "meta ads",
+    "facebook",
+    "pinterest",
+    "ugc",
+    "reels",
+    "social post",
+    "社媒"
+  ],
+  "trigger_phrases": [
+    "Instagram post",
+    "TikTok Shop creative",
+    "Meta ad",
+    "Facebook ad",
+    "Pinterest pin",
+    "UGC style product image",
+    "social media post",
+    "社媒素材"
+  ],
+  "prompt_template": {
+    "type": "cross-border social media content",
+    "subject": "{product_description}",
+    "platform": "{platform_style}",
+    "composition": "phone camera perspective, slightly off-center",
+    "lighting": "natural indoor lighting",
+    "overlay": "{overlay_elements}",
+    "quality": "authentic smartphone photography aesthetic"
+  },
+  "defaults": {
+    "platform": "Instagram / TikTok Shop post style",
+    "composition": "casual phone framing, slightly imperfect",
+    "lighting": "natural window light, warm color tone",
+    "overlay": "minimal English text badges and product benefit tags"
+  },
+  "variants": {
+    "instagram": {
+      "description": "Instagram product post style",
+      "overrides": {
+        "platform": "Instagram post premium lifestyle aesthetic",
+        "composition": "clean framing with clear visual hierarchy",
+        "overlay": "short English hook, benefit tags, subtle engagement elements"
+      }
+    },
+    "tiktok": {
+      "description": "TikTok Shop / Reels cover style",
+      "overrides": {
+        "platform": "TikTok Shop / Reels thumbnail, vertical format",
+        "overlay": "short hook, product card style badge, simple CTA, no fake platform logo"
+      }
+    },
+    "meta-ad": {
+      "description": "Meta / Facebook ad style",
+      "overrides": {
+        "platform": "Meta Ads product creative for cold traffic",
+        "composition": "product-centered with lifestyle context and high readability",
+        "overlay": "clear English headline, 2 benefit bullets, CTA button style without fake logo"
+      }
+    },
+    "pinterest": {
+      "description": "Pinterest pin style",
+      "overrides": {
+        "platform": "Pinterest vertical product pin, inspirational shopping style",
+        "composition": "vertical product lifestyle layout with clean negative space",
+        "overlay": "short headline and save-worthy visual cue"
+      }
+    }
+  },
+  "category_tips": {
+    "beauty": "show texture, skin-safe context, avoid medical claims",
+    "food": "appetizing composition, ingredient sourcing, avoid unsupported health claims",
+    "fashion": "fit, fabric, size context, real-person styling",
+    "home": "styled room corner, cozy atmosphere, scale reference",
+    "electronics": "hands-on use, ports/features accurate, avoid fake screen UI"
+  },
+  "examples": [
+    "Instagram product lifestyle photo, iPhone 15 Pro look, {product} on {surface}, clean natural window light, slight real-life imperfection, English headline in reserved negative space, premium DTC aesthetic, 1080x1350px, no fake logo, no watermark",
+    "TikTok Shop vertical product cover. {product} in real use, phone-shot UGC feel, short English hook, product benefit badge, subtle product card style, 1080x1920px, authentic not over-polished",
+    "Meta ad product creative. {product} as focal point, lifestyle background, clear English headline, two benefit bullets, CTA-style button, mobile-first readability, 1080x1080px, no trademarked platform UI"
+  ],
+  "anti_ai_tips": "Specify phone model and natural imperfections. Add slight noise, real shadows, not perfectly centered. Use 'authentic phone-shot look, not over-polished, not plastic-smooth'.",
+  "supports_image_reference": true
+}

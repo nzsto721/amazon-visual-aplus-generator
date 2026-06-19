@@ -1,0 +1,72 @@
+{
+  "id": "livestream",
+  "name": "Cross-border live commerce scene",
+  "keywords": [
+    "livestream",
+    "live commerce",
+    "tiktok shop live",
+    "amazon live",
+    "live demo",
+    "直播",
+    "跨境直播"
+  ],
+  "trigger_phrases": [
+    "TikTok Shop live",
+    "Amazon Live",
+    "live commerce image",
+    "livestream screenshot",
+    "live demo product scene",
+    "跨境直播间"
+  ],
+  "prompt_template": {
+    "type": "cross-border ecommerce livestream scene",
+    "host": "{host_description}",
+    "product_action": "{product_demonstration}",
+    "background": "real home-style or small studio livestream setup",
+    "ui_overlay": "generic live commerce UI elements without using real platform logos",
+    "lighting": "ring light from front, warm indoor overhead mixing in",
+    "quality": "authentic phone screen capture, NOT AI-generated look"
+  },
+  "defaults": {
+    "host": "friendly host, natural expression, visible skin texture, NOT retouched",
+    "product_action": "holding product close to camera showing details",
+    "background": "organized but real product shelf, LED strip, small plants",
+    "ui_overlay": "LIVE badge, viewer count, comments, product card, buy button, no trademarked platform logo",
+    "lighting": "ring light circular catchlight in eyes, warm indoor overhead"
+  },
+  "variants": {
+    "tiktok-shop": {
+      "description": "TikTok Shop live commerce style",
+      "overrides": {
+        "ui_overlay": "generic TikTok Shop-like live commerce UI: LIVE badge, viewer count, scrolling comments, product card, buy button, no real logo"
+      }
+    },
+    "amazon-live": {
+      "description": "Amazon Live product demo style",
+      "overrides": {
+        "ui_overlay": "generic Amazon Live-like product demo UI: live badge, product carousel, comments, product card, no real logo"
+      }
+    },
+    "setup": {
+      "description": "Live studio setup view",
+      "overrides": {
+        "ui_overlay": "no UI overlay, showing physical setup",
+        "background": "full view of studio with lighting, backdrop, shelves, product table"
+      }
+    }
+  },
+  "category_tips": {
+    "beauty": "host demonstrating texture, swatch, application scene, avoid medical claims",
+    "fashion": "host wearing/showing clothing, fit demo, fabric close-up",
+    "food": "host tasting/preparing, showing freshness, avoid unsupported health claims",
+    "electronics": "host demonstrating features, hands-on product demo, ports accurate",
+    "home": "host showing product in real room context with scale reference"
+  },
+  "examples": [
+    "Ultra-realistic TikTok Shop-style livestream screenshot, phone screen capture. Host in casual outfit, natural skin texture, NOT retouched. Demonstrating {product}, holding it close to camera. Ring light catchlight, real home studio background with product shelf. Generic live commerce UI: LIVE badge, viewer count, comments, product card, buy button, no real platform logo. Warm cast, slight noise, authentic phone-shot feel, 1080x1920px",
+    "Amazon Live-style product demo image. Host holding {product} on a small studio table. Product carousel-style overlay without real logo. Clean but realistic lighting, phone screen capture feel, 1080x1920px",
+    "Livestream setup scene for cross-border ecommerce. Host with {product}, ring light, product display shelf, neutral backdrop, no UI overlay, authentic home studio feel, 1080x1920px"
+  ],
+  "anti_ai_tips": "CRITICAL: phone screen capture style, ring light catchlight, real skin texture, slightly imperfect environment, warm indoor cast, slight noise, no real platform logo, no fake brand logo.",
+  "supports_image_reference": true
+}

@@ -7,6 +7,55 @@ version: "2.0"
 
 # Amazon Visual & A+ Generator · v2
 
+## Design Philosophy
+
+### The Core Idea: Think First, Then Draw
+
+AI is not a magic wand that replaces thinking. The fundamental workflow is:
+
+> **Clarify the sale → Clarify the anxiety → Clarify the visual → Then generate**
+
+Every image must answer one question: **"What purchase anxiety does this resolve?"**
+
+If you cannot answer that question in one sentence, do not generate the image.
+
+### AI Positioning: What AI Can Do vs What the Seller Must Gatekeep
+
+| AI is good at | Sellers must gatekeep |
+|---|---|
+| Generating lifestyle scenes from descriptions | Product facts — dimensions, materials, certifications |
+| Creating clean infographic layouts | Regulatory claims — FDA, CE, eco-labels |
+| Rendering multiple colorways consistently | Brand tone — does this look like "our" brand? |
+| Iterating on composition quickly | Competitor gap — are we copying or differentiating? |
+| Producing size-compliant outputs | Final fact-check — AI sometimes alters product details |
+
+**Rule of thumb**: AI handles the *visual execution*; the seller handles the *strategic direction* and *fact verification*.
+
+### One Image = One Anxiety
+
+Do not try to communicate three benefits in one image. The Amazon thumbnail is small; the mobile scroll is fast. Each image gets one job:
+
+| Image # | The anxiety it answers |
+|---|---|
+| 1 | "Why should I buy this instead of the 50 others?" |
+| 2 | "Will this actually solve my problem?" |
+| 3 | "Is this well-made / safe / durable?" |
+| 4 | "Will it fit my space / my pet / my use case?" |
+| 5 | "How do I use it — is it complicated?" |
+| 6 | "What exactly am I getting — no hidden surprises?" |
+
+If an image tries to answer two anxieties, it answers none.
+
+### Concrete Example: Feature → Visual Direction
+
+| Selling point | Wrong visual | Right visual |
+|---|---|---|
+| "Fits under sofa" | Product photo with text "Space-saving" | Same product in a real living room, shown partially under a sofa, with a tape measure |
+| "Quiet pump" | Text overlay "Ultra-quiet <40dB" | Side-by-side: left side shows a decibel meter next to the product, right side shows a sleeping cat |
+| "6-color options" | 6 small swatches lined up | One hero image showing the product in each color, arranged in a clean grid with the actual product texture visible |
+
+The pattern: **show, don't just label**.
+
 ## Overview
 
 A 5-phase workflow that takes a product folder through research, visual strategy planning, template-matched scripting, style-locked JSON planning, AI image generation, and size-correct finalization — with a mandatory confirmation gate between strategy and generation.
@@ -196,6 +245,16 @@ Combine all above into a **single structured research report** that feeds direct
 > **If web search is unavailable or severely limited**, use the product information provided in `product_info.md` plus general category knowledge to produce the best possible research estimate, but **explicitly mark which sections are estimated vs. data-backed**.
 
 #### Step 1.2: Draft Visual Strategy
+
+**Before writing anything: answer three questions for each image.**
+
+For every planned image, answer:
+
+1. **Anxiety** — What is the one purchase anxiety this image resolves?
+2. **Scene** — What scene/angle/diagram makes that anxiety disappear?
+3. **Constraint** — What must NOT appear (unverified claims, competitor copycat, regulatory risk)?
+
+If you cannot answer all three in plain language, revisit the research. Do not proceed to scripting.
 
 Produce a structured strategy document covering:
 

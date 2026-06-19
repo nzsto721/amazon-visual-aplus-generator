@@ -86,19 +86,114 @@ Load the matched template(s) from `templates/` directory. Use the `prompt_templa
 
 ### Phase 1 — Research & Draft Strategy (NO IMAGES)
 
-#### Step 1.1: Market Research
+#### Step 1.1: Competitor Research (MANDATORY — 必须完成，不可跳过)
 
-Conduct web research. Use WebSearch to investigate:
+This is the most important step in the entire workflow. **Do NOT skip or abbreviate this step.**
+The quality of the visual strategy depends entirely on how well you understand what competitors are doing and where they are failing.
 
-| Research area | What to extract |
+---
+
+##### Step 1.1.1: Keyword-Based Amazon Search
+
+From the product's title and core features in `product_info.md`, construct **3-5 search keyword combinations**:
+
+| Keyword Type | Example |
 |---|---|
-| Category norms | Common price range, feature expressions, typical image styles |
-| Target audience | Who buys, why they buy, what triggers purchase |
-| Competitor images | How top listings structure images, which are unique |
-| Review pain points | From competitor reviews: complaints that can be addressed visually |
-| Regulatory sensitivity | Certifications commonly shown, claims frequently made |
+| Core product term | `"cat house cave bed foldable"` |
+| Core + key feature | `"cat house scratch pad indoor"` |
+| Core + target audience | `"large cat bed for indoor cats"` |
+| Long-tail pain-point term | `"foldable cat house easy clean"` |
+| Category broad term | `"cat condo cave bed"`` |
 
-**Output**: A concise research summary (one paragraph per area) included in the strategy draft.
+For each keyword combination, search Amazon and collect:
+
+- **Top 10-20 ASINs** from the search results page
+- For each ASIN, record: title, star rating, review count, price range, main image URL
+- **Total target: 15-25 unique competing products**
+
+**Output format**: A table of competitors with basic metadata.
+
+---
+
+##### Step 1.1.2: Deep Dive into Top 5-8 Competitors
+
+Select the **5-8 most relevant competitors** (similar price range, similar feature set, high review count).
+For each competitor, extract the following data:
+
+| Data Field | What to Extract | Why It Matters |
+|---|---|---|
+| **Title** | Full listing title | How they position the product |
+| **5 Bullet Points** | All five bullets word-for-word | What benefits they emphasize |
+| **Main Image** | Visual analysis (angle, props, background, text) | Their visual first impression |
+| **Secondary Images (all)** | Count + description of each image type (scene/feature/size/lifestyle) | Their image strategy pattern |
+| **Star Rating & Review Count** | e.g., 4.5 / 1,243 reviews | Market acceptance level |
+| **Price** | Current listed price | Positioning reference |
+
+**Output format**: One structured section per competitor.
+
+---
+
+##### Step 1.1.3: Negative Review Analysis (痛点挖掘)
+
+For each of the top 5-8 competitors, find and analyze **their worst reviews**:
+
+**Method:**
+1. Search for each ASIN's reviews, filtering for **1-star and 2-star reviews**
+2. Read the **most recent 20 negative reviews per product** (100-160 total)
+3. For each complaint, extract: **what went wrong**, **how often it appears**, **which product attribute caused it**
+
+**Pain Point Clustering Template (must produce this table):**
+
+| # | Pain Point | Frequency | Affected Product Attribute | Can OUR Product Solve This? |
+|---|---|---:|---|:---:|
+| 1 | "Collapsed after 2 weeks" | ⭐⭐⭐⭐⭐ | Structure material | ✅ Yes — MDF frame |
+| 2 | "Too small for my 15lb cat" | ⭐⭐⭐⭐ | Dimensions | ✅ Yes — fits up to 20lbs |
+| 3 | "Cushion can't be removed for washing" | ⭐⭐⭐⭐ | Cushion design | ✅ Yes — removable & machine washable |
+| ... | ... | ... | ... | ... |
+
+**Sorting rule:** Sort by frequency descending (most common complaints at top).
+
+**Critical question for each row:** "Can we visually prove that our product does NOT have this problem?"
+- If YES → This becomes a **dedicated image topic** in our plan
+- If NO → Note as a gap; do not claim otherwise
+
+---
+
+##### Step 1.1.4: Competitor Visual Strategy Gap Analysis
+
+After collecting all competitor data, analyze their image strategies holistically:
+
+| Analysis Dimension | What to Look For | Our Opportunity |
+|---|---|---|
+| **Image topics overlap** | What do ALL competitors show? (e.g., every cat house shows "folded vs unfolded") | Avoid pure repetition — find angles others miss |
+| **Image topics nobody covers** | What complaints appear in reviews but NO competitor addresses visually? | **GOLD MINE** — these are our differentiation images |
+| **Visual style homogeneity** | Are all competitors using the same color scheme / angle / composition? | Break the pattern with distinct Style Lock |
+| **Text-on-image usage** | Do competitors put text on images? What font/size/language? | Follow or break based on category norms |
+| **Lifestyle scene patterns** | What rooms/settings do they show? Real cats or stock photos? | Use more authentic / distinctive scenes |
+| **Size communication method** | How do they show dimensions? Ruler? Reference object? Human hand? | Pick clearest method, improve upon it |
+
+**Output format**: A "Competitor Visual Gap Summary" table showing:
+- What everyone does (table stakes — must match or exceed)
+- What some do well (competitive parity — should match)
+- What nobody does (our blue ocean opportunity — prioritize these)
+
+---
+
+##### Step 1.1.5: Synthesize into Research Report
+
+Combine all above into a **single structured research report** that feeds directly into Step 1.2 (Draft Visual Strategy). The report must include:
+
+1. **Category Snapshot** — price range, mainstream style, dominant selling points
+2. **Top Competitors Table** — ASINs, titles, ratings, prices, image counts
+3. **Pain Point Ranking** — clustered complaints sorted by frequency (from Step 1.1.3)
+4. **Visual Gap Analysis** — what's overdone, what's missing (from Step 1.1.4)
+5. **Recommended Visual Priorities** — ranked list of which purchase anxieties our images should address, **derived from actual customer complaints**
+
+**The last point (#5) is the bridge between research and creative output. Every image in the plan must trace back to a real customer pain point or competitive gap identified here.**
+
+---
+
+> **If web search is unavailable or severely limited**, use the product information provided in `product_info.md` plus general category knowledge to produce the best possible research estimate, but **explicitly mark which sections are estimated vs. data-backed**.
 
 #### Step 1.2: Draft Visual Strategy
 
